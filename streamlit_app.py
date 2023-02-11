@@ -49,7 +49,7 @@ def get_fruit_load_list():
 
 #add a button to load the fruit
 if streamlit.button('Get Fruit Load List'):
-    my_cnx = sowflake.connector.connect(**streamlit.secrets["snowflake"])
+    # my_cnx = sowflake.connector.connect(**streamlit.secrets["snowflake"])
     my_data_rows = get_fruit_load_list()
     streamlit.dataframe(my_data_rows)
 
